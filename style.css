@@ -2,14 +2,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 :root {
-  --color-text: #ECEFF2
-  --color-text-bold: #828282;
+  --color-text: #828282;
+  --color-text-bold: ;
   --color-text-emphasis: #ee24ff;
   --color-text-secondary: #3f3d56;
-  --font-primary: 'Dosis', sans-serif;
-  --font-secondary: 'Open Sans', sans-serif;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Dosis", sans-serif;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+main {
+  width: 58rem;
+  margin-top: 6.3rem;
+}
+
+main .title {
+  font-family: var(--font-secondary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  font-size: 3.2rem;
+
+  margin-top: 3.2rem;
+}
+
+main .title span {
+  color: var(--color-text-emphasis);
+  font-weight: 700;
+}
+
+main .text {
+  color: var(--color-text);
+
+  display: grid;
+  gap: 2.4rem;
+
+  margin: 1.6rem;
+}
+
+main .text span {
+  color: var(--color-text-secondary);
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 6.4rem;
+}
+
+footer .line {
+  border: 0.1rem solid #eceff2;
+  width: 39rem;
+  margin: 0 auto;
+}
+
+footer .link {
+  display: flex;
+  justify-content: center;
+  gap: 4.2rem;
+
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+}
+
+footer::after {
+  content: url(images/footer.svg);
 }

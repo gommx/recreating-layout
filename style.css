@@ -5,4 +5,11 @@
   overflow: hidden;
 }
 
-
+:root {
+  --color-text: #ECEFF2
+  --color-text-bold: #828282;
+  --color-text-emphasis: #ee24ff;
+  --color-text-secondary: #3f3d56;
+  --font-primary: 'Dosis', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+}

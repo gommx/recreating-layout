@@ -81,6 +81,25 @@ footer a {
   font-weight: 700;
 }
 
-footer::after {
-  content: url(images/footer.svg);
+footer img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 40rem;
+    margin-top: 3rem;
+  }
+
+  main img {
+    width: 50%;
+  }
+
+  main .text {
+    text-align: justify;
+  }
+
+  footer {
+    margin-top: 4;
+  }
 }
